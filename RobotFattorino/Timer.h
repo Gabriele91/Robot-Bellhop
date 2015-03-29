@@ -63,7 +63,7 @@ namespace Timer
 
     inline double time_of_execute(std::function<void(void)> task)
     {
-        bit64 start=get_time();
+		double start = get_time();
         task();
         return get_time()-start;
     }

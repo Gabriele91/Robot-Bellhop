@@ -3,11 +3,11 @@
 */
 CONFIG
 {
-	robot 2		   	    /* type uint, default is 0 */
+	robot 0				/* type uint, default is 0 */
 	doors not equals	/* type equals | not equals, default is not equals */
-//	dfs   "test3/dfs.txt"     /* type string, if is not specified it isn't execute */
-//	bfs   "test4/bfs.txt"     /* type string, if is not specified it isn't execute */
-//	uc    "test4/uc.txt"      /* type string, if is not specified it isn't execute */
+	//dfs   "dfs.txt"		/* type string, if is not specified it isn't execute */
+	bfs   "bfs.txt"     /* type string, if is not specified it isn't execute */
+	uc    "uc.txt"      /* type string, if is not specified it isn't execute */
 	iddfs "iddfs.txt"   /* type string, if is not specified it isn't execute */
 }
 
@@ -20,16 +20,16 @@ CONSTS
 {
     0      //start
     
-    75      //move prev
-    75      //move next
+    1      //move prev
+    100    //move next
     
-    40      //take
-    20      //leaves
+    2      //take
+    2      //leaves
     
-    10      //open prev
-    10      //open next
-    240     //close prev
-    240     //close next
+    1      //open prev
+    1      //open next
+    4      //close prev
+    4      //close next
 }
 
 /* 
@@ -39,11 +39,10 @@ START
 {
 	/* 0 */  open  | Box("Pizza") Box("Cartone")  Key("1")  
 	/* 1 */  close | 
-	/* 2 */  open  | Bread("0.5") Key("3") 
+	/* 2 */  open  | Bread("0.5")
 	/* 3 */  close | 
-	/* 4 */  open  | Bottle("Peroni") 
-	/* 5 */  open  | 
-	/* 6 */  open  | 
+	/* 4 */  open  | Bottle("Peroni")
+	/* 5 */  open  |
 }
 
 /*
@@ -51,12 +50,11 @@ START
 */
 END
 {
-	/* 0 */  open  | Key("1")
+	/* 0 */  open  | Key("1") Bottle("Peroni")  
 	/* 1 */  close | 
-	/* 2 */  open  | Box("Pizza") Box("Cartone")  Key("3")
+	/* 2 */  open  | Box("Pizza") Box("Cartone")
 	/* 3 */  close | 
 	/* 4 */  open  |
-	/* 5 */  open  | Bread("0.5") 
-	/* 6 */  open  | Bottle("Peroni") 
+	/* 5 */  open  | Bread("0.5")
 }
 

@@ -100,7 +100,7 @@ public:
     {
         for(size_t i=0; i!=m_objects.size();++i)
         {
-            if((*m_objects[i])==*obj)  return i;
+            if((*m_objects[i])==*obj)  return (long)i;
         }
         return -1;
     }
