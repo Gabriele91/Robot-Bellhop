@@ -1,0 +1,423 @@
+
+Level: 1
+{ 
+	Action: START;
+	Cost: 0;
+	Robot: {  Room: 0; };
+	House:
+	{
+
+		door: close;
+
+		0: { Box: Pizza; Box: Cartone; Key: 1; }; 
+
+		door: close;
+
+		1: { }; 
+
+		door: open;
+
+		2: { }; 
+
+		door: open;
+
+		3: { }; 
+
+		door: open;
+
+		4: { }; 
+	};
+};
+
+Level: 2
+{ 
+	Action: TAKE A OBJECT;
+	Cost: 2;
+	Robot: {  Room: 0; Object: { Key: 1 }; };
+	House:
+	{
+
+		door: close;
+
+		0: { Box: Pizza; Box: Cartone; }; 
+
+		door: close;
+
+		1: { }; 
+
+		door: open;
+
+		2: { }; 
+
+		door: open;
+
+		3: { }; 
+
+		door: open;
+
+		4: { }; 
+	};
+};
+
+Level: 3
+{ 
+	Action: OPEN DOOR OF THE NEXT ROOM;
+	Cost: 3;
+	Robot: {  Room: 0; Object: { Key: 1 }; };
+	House:
+	{
+
+		door: close;
+
+		0: { Box: Pizza; Box: Cartone; }; 
+
+		door: open;
+
+		1: { }; 
+
+		door: open;
+
+		2: { }; 
+
+		door: open;
+
+		3: { }; 
+
+		door: open;
+
+		4: { }; 
+	};
+};
+
+Level: 4
+{ 
+	Action: LEAVES A OBJECT;
+	Cost: 5;
+	Robot: {  Room: 0; };
+	House:
+	{
+
+		door: close;
+
+		0: { Box: Pizza; Box: Cartone; Key: 1; }; 
+
+		door: open;
+
+		1: { }; 
+
+		door: open;
+
+		2: { }; 
+
+		door: open;
+
+		3: { }; 
+
+		door: open;
+
+		4: { }; 
+	};
+};
+
+Level: 5
+{ 
+	Action: TAKE A OBJECT;
+	Cost: 7;
+	Robot: {  Room: 0; Object: { Box: Cartone }; };
+	House:
+	{
+
+		door: close;
+
+		0: { Box: Pizza; Key: 1; }; 
+
+		door: open;
+
+		1: { }; 
+
+		door: open;
+
+		2: { }; 
+
+		door: open;
+
+		3: { }; 
+
+		door: open;
+
+		4: { }; 
+	};
+};
+
+Level: 6
+{ 
+	Action: MOVE TO THE NEXT ROOM;
+	Cost: 107;
+	Robot: {  Room: 1; Object: { Box: Cartone }; };
+	House:
+	{
+
+		door: close;
+
+		0: { Box: Pizza; Key: 1; }; 
+
+		door: open;
+
+		1: { }; 
+
+		door: open;
+
+		2: { }; 
+
+		door: open;
+
+		3: { }; 
+
+		door: open;
+
+		4: { }; 
+	};
+};
+
+Level: 7
+{ 
+	Action: MOVE TO THE NEXT ROOM;
+	Cost: 207;
+	Robot: {  Room: 2; Object: { Box: Cartone }; };
+	House:
+	{
+
+		door: close;
+
+		0: { Box: Pizza; Key: 1; }; 
+
+		door: open;
+
+		1: { }; 
+
+		door: open;
+
+		2: { }; 
+
+		door: open;
+
+		3: { }; 
+
+		door: open;
+
+		4: { }; 
+	};
+};
+
+Level: 8
+{ 
+	Action: LEAVES A OBJECT;
+	Cost: 209;
+	Robot: {  Room: 2; };
+	House:
+	{
+
+		door: close;
+
+		0: { Box: Pizza; Key: 1; }; 
+
+		door: open;
+
+		1: { }; 
+
+		door: open;
+
+		2: { Box: Cartone; }; 
+
+		door: open;
+
+		3: { }; 
+
+		door: open;
+
+		4: { }; 
+	};
+};
+
+Level: 9
+{ 
+	Action: MOVE TO THE PREVIUS ROOM;
+	Cost: 210;
+	Robot: {  Room: 1; };
+	House:
+	{
+
+		door: close;
+
+		0: { Box: Pizza; Key: 1; }; 
+
+		door: open;
+
+		1: { }; 
+
+		door: open;
+
+		2: { Box: Cartone; }; 
+
+		door: open;
+
+		3: { }; 
+
+		door: open;
+
+		4: { }; 
+	};
+};
+
+Level: 10
+{ 
+	Action: MOVE TO THE PREVIUS ROOM;
+	Cost: 211;
+	Robot: {  Room: 0; };
+	House:
+	{
+
+		door: close;
+
+		0: { Box: Pizza; Key: 1; }; 
+
+		door: open;
+
+		1: { }; 
+
+		door: open;
+
+		2: { Box: Cartone; }; 
+
+		door: open;
+
+		3: { }; 
+
+		door: open;
+
+		4: { }; 
+	};
+};
+
+Level: 11
+{ 
+	Action: TAKE A OBJECT;
+	Cost: 213;
+	Robot: {  Room: 0; Object: { Box: Pizza }; };
+	House:
+	{
+
+		door: close;
+
+		0: { Key: 1; }; 
+
+		door: open;
+
+		1: { }; 
+
+		door: open;
+
+		2: { Box: Cartone; }; 
+
+		door: open;
+
+		3: { }; 
+
+		door: open;
+
+		4: { }; 
+	};
+};
+
+Level: 12
+{ 
+	Action: MOVE TO THE NEXT ROOM;
+	Cost: 313;
+	Robot: {  Room: 1; Object: { Box: Pizza }; };
+	House:
+	{
+
+		door: close;
+
+		0: { Key: 1; }; 
+
+		door: open;
+
+		1: { }; 
+
+		door: open;
+
+		2: { Box: Cartone; }; 
+
+		door: open;
+
+		3: { }; 
+
+		door: open;
+
+		4: { }; 
+	};
+};
+
+Level: 13
+{ 
+	Action: MOVE TO THE NEXT ROOM;
+	Cost: 413;
+	Robot: {  Room: 2; Object: { Box: Pizza }; };
+	House:
+	{
+
+		door: close;
+
+		0: { Key: 1; }; 
+
+		door: open;
+
+		1: { }; 
+
+		door: open;
+
+		2: { Box: Cartone; }; 
+
+		door: open;
+
+		3: { }; 
+
+		door: open;
+
+		4: { }; 
+	};
+};
+
+Level: 14
+{ 
+	Action: LEAVES A OBJECT;
+	Cost: 415;
+	Robot: {  Room: 2; };
+	House:
+	{
+
+		door: close;
+
+		0: { Key: 1; }; 
+
+		door: open;
+
+		1: { }; 
+
+		door: open;
+
+		2: { Box: Cartone; Box: Pizza; }; 
+
+		door: open;
+
+		3: { }; 
+
+		door: open;
+
+		4: { }; 
+	};
+};
+Nodes generated: 4140;
+Time to execute: 28.241 ms;
+Max queue size: 27;

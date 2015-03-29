@@ -1,0 +1,22 @@
+
+- SOLUZIONE BREVI:
+	
+	Catelle: Test_cpp, Test0 e Test1
+
+	N.b.  Test_cpp & Test0  sono lo stesso test: il primo scritto direttamente in c++, il secondo usando il file di configurazione.
+
+- PREOBLEMA SENZA SOLUZIONE:
+	
+	Catella: Test2
+
+- PROBLEMA MEDIO/LUNGO:
+
+	Cartelle: Test3, Test4 e Test5	
+
+	N.b. Test3 e Test4 sono lo stesso test, ma con pesi cambiati.
+	N.b. Test5 è il più lungo.
+	N.b. Non c'è la dfs perché ho deciso di interrompere il testo, dopo 4 ore di esecuzione.
+
+- PROBLEMA MOLTO LUNGO:
+
+	Cartella: Test6

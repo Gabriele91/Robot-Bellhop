@@ -1,0 +1,4 @@
+Solution not found!
+Nodes generated: 10;
+Time to execute: 1.01294 ms;
+Max queue size: 5;

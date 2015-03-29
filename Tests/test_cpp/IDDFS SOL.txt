@@ -1,0 +1,636 @@
+--------------------------------
+IDDFS SOL:
+
+
+Level: 1
+{ 
+	Action: START;
+	Cost: 0;
+	Robot: {  Room: 1; };
+	House:
+	{
+
+		door: open;
+
+		0: { Key: 2; Box: lettere; Bread: 0.500000 kg; }; 
+
+		door: open;
+
+		1: { Box: pizza; Bottle: poretti; }; 
+
+		door: close;
+
+		2: { }; 
+
+		door: open;
+
+		3: { }; 
+
+		door: open;
+
+		4: { }; 
+	};
+};
+
+Level: 2
+{ 
+	Action: MOVE TO THE PREVIUS ROOM;
+	Cost: 1;
+	Robot: {  Room: 0; };
+	House:
+	{
+
+		door: open;
+
+		0: { Key: 2; Box: lettere; Bread: 0.500000 kg; }; 
+
+		door: open;
+
+		1: { Box: pizza; Bottle: poretti; }; 
+
+		door: close;
+
+		2: { }; 
+
+		door: open;
+
+		3: { }; 
+
+		door: open;
+
+		4: { }; 
+	};
+};
+
+Level: 3
+{ 
+	Action: TAKE A OBJECT;
+	Cost: 3;
+	Robot: {  Room: 0; Object: { Key: 2 }; };
+	House:
+	{
+
+		door: open;
+
+		0: { Box: lettere; Bread: 0.500000 kg; }; 
+
+		door: open;
+
+		1: { Box: pizza; Bottle: poretti; }; 
+
+		door: close;
+
+		2: { }; 
+
+		door: open;
+
+		3: { }; 
+
+		door: open;
+
+		4: { }; 
+	};
+};
+
+Level: 4
+{ 
+	Action: MOVE TO THE NEXT ROOM;
+	Cost: 103;
+	Robot: {  Room: 1; Object: { Key: 2 }; };
+	House:
+	{
+
+		door: open;
+
+		0: { Box: lettere; Bread: 0.500000 kg; }; 
+
+		door: open;
+
+		1: { Box: pizza; Bottle: poretti; }; 
+
+		door: close;
+
+		2: { }; 
+
+		door: open;
+
+		3: { }; 
+
+		door: open;
+
+		4: { }; 
+	};
+};
+
+Level: 5
+{ 
+	Action: OPEN DOOR OF THE NEXT ROOM;
+	Cost: 104;
+	Robot: {  Room: 1; Object: { Key: 2 }; };
+	House:
+	{
+
+		door: open;
+
+		0: { Box: lettere; Bread: 0.500000 kg; }; 
+
+		door: open;
+
+		1: { Box: pizza; Bottle: poretti; }; 
+
+		door: open;
+
+		2: { }; 
+
+		door: open;
+
+		3: { }; 
+
+		door: open;
+
+		4: { }; 
+	};
+};
+
+Level: 6
+{ 
+	Action: MOVE TO THE NEXT ROOM;
+	Cost: 204;
+	Robot: {  Room: 2; Object: { Key: 2 }; };
+	House:
+	{
+
+		door: open;
+
+		0: { Box: lettere; Bread: 0.500000 kg; }; 
+
+		door: open;
+
+		1: { Box: pizza; Bottle: poretti; }; 
+
+		door: open;
+
+		2: { }; 
+
+		door: open;
+
+		3: { }; 
+
+		door: open;
+
+		4: { }; 
+	};
+};
+
+Level: 7
+{ 
+	Action: LEAVES A OBJECT;
+	Cost: 206;
+	Robot: {  Room: 2; };
+	House:
+	{
+
+		door: open;
+
+		0: { Box: lettere; Bread: 0.500000 kg; }; 
+
+		door: open;
+
+		1: { Box: pizza; Bottle: poretti; }; 
+
+		door: open;
+
+		2: { Key: 2; }; 
+
+		door: open;
+
+		3: { }; 
+
+		door: open;
+
+		4: { }; 
+	};
+};
+
+Level: 8
+{ 
+	Action: MOVE TO THE PREVIUS ROOM;
+	Cost: 207;
+	Robot: {  Room: 1; };
+	House:
+	{
+
+		door: open;
+
+		0: { Box: lettere; Bread: 0.500000 kg; }; 
+
+		door: open;
+
+		1: { Box: pizza; Bottle: poretti; }; 
+
+		door: open;
+
+		2: { Key: 2; }; 
+
+		door: open;
+
+		3: { }; 
+
+		door: open;
+
+		4: { }; 
+	};
+};
+
+Level: 9
+{ 
+	Action: TAKE A OBJECT;
+	Cost: 209;
+	Robot: {  Room: 1; Object: { Bottle: poretti }; };
+	House:
+	{
+
+		door: open;
+
+		0: { Box: lettere; Bread: 0.500000 kg; }; 
+
+		door: open;
+
+		1: { Box: pizza; }; 
+
+		door: open;
+
+		2: { Key: 2; }; 
+
+		door: open;
+
+		3: { }; 
+
+		door: open;
+
+		4: { }; 
+	};
+};
+
+Level: 10
+{ 
+	Action: MOVE TO THE NEXT ROOM;
+	Cost: 309;
+	Robot: {  Room: 2; Object: { Bottle: poretti }; };
+	House:
+	{
+
+		door: open;
+
+		0: { Box: lettere; Bread: 0.500000 kg; }; 
+
+		door: open;
+
+		1: { Box: pizza; }; 
+
+		door: open;
+
+		2: { Key: 2; }; 
+
+		door: open;
+
+		3: { }; 
+
+		door: open;
+
+		4: { }; 
+	};
+};
+
+Level: 11
+{ 
+	Action: MOVE TO THE NEXT ROOM;
+	Cost: 409;
+	Robot: {  Room: 3; Object: { Bottle: poretti }; };
+	House:
+	{
+
+		door: open;
+
+		0: { Box: lettere; Bread: 0.500000 kg; }; 
+
+		door: open;
+
+		1: { Box: pizza; }; 
+
+		door: open;
+
+		2: { Key: 2; }; 
+
+		door: open;
+
+		3: { }; 
+
+		door: open;
+
+		4: { }; 
+	};
+};
+
+Level: 12
+{ 
+	Action: LEAVES A OBJECT;
+	Cost: 411;
+	Robot: {  Room: 3; };
+	House:
+	{
+
+		door: open;
+
+		0: { Box: lettere; Bread: 0.500000 kg; }; 
+
+		door: open;
+
+		1: { Box: pizza; }; 
+
+		door: open;
+
+		2: { Key: 2; }; 
+
+		door: open;
+
+		3: { Bottle: poretti; }; 
+
+		door: open;
+
+		4: { }; 
+	};
+};
+
+Level: 13
+{ 
+	Action: MOVE TO THE NEXT ROOM;
+	Cost: 511;
+	Robot: {  Room: 4; };
+	House:
+	{
+
+		door: open;
+
+		0: { Box: lettere; Bread: 0.500000 kg; }; 
+
+		door: open;
+
+		1: { Box: pizza; }; 
+
+		door: open;
+
+		2: { Key: 2; }; 
+
+		door: open;
+
+		3: { Bottle: poretti; }; 
+
+		door: open;
+
+		4: { }; 
+	};
+};
+
+Level: 14
+{ 
+	Action: MOVE TO THE NEXT ROOM;
+	Cost: 611;
+	Robot: {  Room: 0; };
+	House:
+	{
+
+		door: open;
+
+		0: { Box: lettere; Bread: 0.500000 kg; }; 
+
+		door: open;
+
+		1: { Box: pizza; }; 
+
+		door: open;
+
+		2: { Key: 2; }; 
+
+		door: open;
+
+		3: { Bottle: poretti; }; 
+
+		door: open;
+
+		4: { }; 
+	};
+};
+
+Level: 15
+{ 
+	Action: TAKE A OBJECT;
+	Cost: 613;
+	Robot: {  Room: 0; Object: { Box: lettere }; };
+	House:
+	{
+
+		door: open;
+
+		0: { Bread: 0.500000 kg; }; 
+
+		door: open;
+
+		1: { Box: pizza; }; 
+
+		door: open;
+
+		2: { Key: 2; }; 
+
+		door: open;
+
+		3: { Bottle: poretti; }; 
+
+		door: open;
+
+		4: { }; 
+	};
+};
+
+Level: 16
+{ 
+	Action: MOVE TO THE NEXT ROOM;
+	Cost: 713;
+	Robot: {  Room: 1; Object: { Box: lettere }; };
+	House:
+	{
+
+		door: open;
+
+		0: { Bread: 0.500000 kg; }; 
+
+		door: open;
+
+		1: { Box: pizza; }; 
+
+		door: open;
+
+		2: { Key: 2; }; 
+
+		door: open;
+
+		3: { Bottle: poretti; }; 
+
+		door: open;
+
+		4: { }; 
+	};
+};
+
+Level: 17
+{ 
+	Action: LEAVES A OBJECT;
+	Cost: 715;
+	Robot: {  Room: 1; };
+	House:
+	{
+
+		door: open;
+
+		0: { Bread: 0.500000 kg; }; 
+
+		door: open;
+
+		1: { Box: pizza; Box: lettere; }; 
+
+		door: open;
+
+		2: { Key: 2; }; 
+
+		door: open;
+
+		3: { Bottle: poretti; }; 
+
+		door: open;
+
+		4: { }; 
+	};
+};
+
+Level: 18
+{ 
+	Action: TAKE A OBJECT;
+	Cost: 717;
+	Robot: {  Room: 1; Object: { Box: pizza }; };
+	House:
+	{
+
+		door: open;
+
+		0: { Bread: 0.500000 kg; }; 
+
+		door: open;
+
+		1: { Box: lettere; }; 
+
+		door: open;
+
+		2: { Key: 2; }; 
+
+		door: open;
+
+		3: { Bottle: poretti; }; 
+
+		door: open;
+
+		4: { }; 
+	};
+};
+
+Level: 19
+{ 
+	Action: MOVE TO THE NEXT ROOM;
+	Cost: 817;
+	Robot: {  Room: 2; Object: { Box: pizza }; };
+	House:
+	{
+
+		door: open;
+
+		0: { Bread: 0.500000 kg; }; 
+
+		door: open;
+
+		1: { Box: lettere; }; 
+
+		door: open;
+
+		2: { Key: 2; }; 
+
+		door: open;
+
+		3: { Bottle: poretti; }; 
+
+		door: open;
+
+		4: { }; 
+	};
+};
+
+Level: 20
+{ 
+	Action: MOVE TO THE NEXT ROOM;
+	Cost: 917;
+	Robot: {  Room: 3; Object: { Box: pizza }; };
+	House:
+	{
+
+		door: open;
+
+		0: { Bread: 0.500000 kg; }; 
+
+		door: open;
+
+		1: { Box: lettere; }; 
+
+		door: open;
+
+		2: { Key: 2; }; 
+
+		door: open;
+
+		3: { Bottle: poretti; }; 
+
+		door: open;
+
+		4: { }; 
+	};
+};
+
+Level: 21
+{ 
+	Action: LEAVES A OBJECT;
+	Cost: 919;
+	Robot: {  Room: 3; };
+	House:
+	{
+
+		door: open;
+
+		0: { Bread: 0.500000 kg; }; 
+
+		door: open;
+
+		1: { Box: lettere; }; 
+
+		door: open;
+
+		2: { Key: 2; }; 
+
+		door: open;
+
+		3: { Bottle: poretti; Box: pizza; }; 
+
+		door: open;
+
+		4: { }; 
+	};
+};
+Nodes generated: 3171483;
+Time to execute: 15588.6 ms;
+Max queue size: 46;
