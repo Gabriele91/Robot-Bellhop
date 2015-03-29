@@ -5,7 +5,7 @@ CONFIG
 {
 	robot 0				/* type uint, default is 0 */
 	doors not equals	/* type equals | not equals, default is not equals */
-	//dfs   "dfs.txt"		/* type string, if is not specified it isn't execute */
+	dfs   "dfs.txt"		/* type string, if is not specified it isn't execute */
 	bfs   "bfs.txt"     /* type string, if is not specified it isn't execute */
 	uc    "uc.txt"      /* type string, if is not specified it isn't execute */
 	iddfs "iddfs.txt"   /* type string, if is not specified it isn't execute */
@@ -37,12 +37,11 @@ CONSTS
 */
 START
 {
-	/* 0 */  open  | Box("Pizza") Box("Cartone")  Key("1")  
+	/* 0 */  close | Box("Pizza") Box("Cartone")  Key("1")  
 	/* 1 */  close | 
-	/* 2 */  open  | Bread("0.5")
-	/* 3 */  close | 
-	/* 4 */  open  | Bottle("Peroni")
-	/* 5 */  open  |
+	/* 2 */  open  |
+	/* 3 */  open  | 
+	/* 4 */  open  | 
 }
 
 /*
@@ -50,11 +49,9 @@ START
 */
 END
 {
-	/* 0 */  open  | Key("1") Bottle("Peroni")  
+	/* 0 */  close | Key("1")   
 	/* 1 */  close | 
 	/* 2 */  open  | Box("Pizza") Box("Cartone")
-	/* 3 */  close | 
-	/* 4 */  open  |
-	/* 5 */  open  | Bread("0.5")
+	/* 3 */  open  | 
+	/* 4 */  open  | 
 }
-
