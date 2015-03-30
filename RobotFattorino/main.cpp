@@ -18,7 +18,9 @@ const size_t gigabytes=1073741824;
 int main(int argc, const char * argv[])
 {
 #ifdef _WIN32
-    SetThreadPriority(GetCurrentThread(), THREAD_PRIORITY_HIGHEST);
+    //THREAD_PRIORITY_HIGHEST
+    if (!SetThreadPriority(GetCurrentThread(), THREAD_PRIORITY_TIME_CRITICAL))
+        std::cout << "Failed to set priority time critical ("<< GetLastError()<<")\n";
 #endif
     //init alloc
     ObjectsMap::init_pool_alloc(megabytes*128);

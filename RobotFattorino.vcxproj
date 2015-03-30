@@ -224,10 +224,12 @@
     <ClInclude Include="RobotFattorino\IDDFSSolver.h" />
     <ClInclude Include="RobotFattorino\Key.h" />
     <ClInclude Include="RobotFattorino\Object.h" />
+    <ClInclude Include="RobotFattorino\ObjectPoolAlloc.h" />
     <ClInclude Include="RobotFattorino\Parser.h" />
     <ClInclude Include="RobotFattorino\Robot.h" />
     <ClInclude Include="RobotFattorino\Room.h" />
     <ClInclude Include="RobotFattorino\Solver.h" />
+    <ClInclude Include="RobotFattorino\StaticString.h" />
     <ClInclude Include="RobotFattorino\Timer.h" />
     <ClInclude Include="RobotFattorino\UCSolver.h" />
     <ClInclude Include="RobotFattorino\Visitor.h" />
@@ -236,6 +238,7 @@
     <ClCompile Include="RobotFattorino\ConfigFile.cpp" />
     <ClCompile Include="RobotFattorino\main.cpp" />
     <ClCompile Include="RobotFattorino\Object.cpp" />
+    <ClCompile Include="RobotFattorino\ObjectPoolAlloc.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

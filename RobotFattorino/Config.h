@@ -21,6 +21,9 @@
 #include <list>
 #include <cstring>
 #include <memory>
+#ifdef _WIN32
+    #include <Windows.h>
+#endif
 ////////////////////////////////////////////////////////////////
 
 #define assert(x)

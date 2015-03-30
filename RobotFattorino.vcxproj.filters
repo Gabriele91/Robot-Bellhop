@@ -69,6 +69,12 @@
     <ClInclude Include="RobotFattorino\Visitor.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="RobotFattorino\ObjectPoolAlloc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RobotFattorino\StaticString.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="RobotFattorino\ConfigFile.cpp">
@@ -78,6 +84,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="RobotFattorino\Object.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RobotFattorino\ObjectPoolAlloc.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
