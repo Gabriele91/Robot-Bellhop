@@ -25,6 +25,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		E00991861AC87D8F00E83EBE /* config.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; path = config.txt; sourceTree = "<group>"; };
 		E043C6361AC2EEAC00764817 /* Object.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Object.h; sourceTree = "<group>"; };
 		E043C6371AC2F01E00764817 /* Door.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Door.h; sourceTree = "<group>"; };
 		E043C6381AC2F08600764817 /* Config.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Config.h; sourceTree = "<group>"; };
@@ -63,6 +64,7 @@
 		E09AC1141AC1579000B679C0 = {
 			isa = PBXGroup;
 			children = (
+				E00991861AC87D8F00E83EBE /* config.txt */,
 				E09AC11F1AC1579000B679C0 /* RobotFattorino */,
 				E09AC11E1AC1579000B679C0 /* Products */,
 			);
