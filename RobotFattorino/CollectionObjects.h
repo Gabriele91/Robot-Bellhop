@@ -11,7 +11,18 @@
 
 #include "Config.h"
 #include "Object.h"
+#include "StaticString.h"
 
+namespace Default
+{
+    #ifdef ENABLE_STATIC_STRING_OBJECT
+        typedef StaticString< 50 > string;
+        #define DStringToString(s) std::string((const char*)(s))
+    #else
+        typedef std::string string;
+        #define DStringToString(s) (s)
+    #endif
+}
 enum TypeObjectStandard
 {
     O_BOX=O_ELEMENT0,
@@ -23,7 +34,7 @@ enum TypeObjectStandard
 class Box : public Object
 {
     //attributes
-    std::string m_name;
+    Default::string m_name;
     //friend class
     friend class Door;
     
@@ -42,7 +53,7 @@ public:
     
     virtual std::string name() const
     {
-        return "Box: "+m_name;
+        return "Box: "+DStringToString(m_name);
     }
     
     virtual bool operator==(const Object* obj) const
@@ -57,7 +68,7 @@ REGISTERED_OBJECT(Box);
 class Bottle : public Object
 {
     //attributes
-    std::string m_name;
+    Default::string m_name;
     //friend class
     friend class Door;
     
@@ -76,7 +87,7 @@ public:
     
     virtual std::string name() const
     {
-        return "Bottle: "+m_name;
+        return "Bottle: "+DStringToString(m_name);
     }
     
     virtual bool operator==(const Object* obj) const

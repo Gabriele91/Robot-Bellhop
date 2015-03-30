@@ -27,7 +27,8 @@
 #define NOT(x) (!(x))
 typedef signed long LONG;
 #define ENABLE_ANALYSIS
-
+#define ENABLE_POOL_OBJECT
+#define ENABLE_STATIC_STRING_OBJECT
 ////////////////////////////////////////////////////////////////
 //class
 class Object;

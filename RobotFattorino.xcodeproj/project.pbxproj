@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		E06047181AC692A000D9F674 /* Object.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E06047171AC692A000D9F674 /* Object.cpp */; };
 		E060471E1AC6CD9500D9F674 /* ConfigFile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E060471D1AC6CD9500D9F674 /* ConfigFile.cpp */; };
+		E0670FE31AC96573000E95EB /* ObjectPoolAlloc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E0670FE21AC96573000E95EB /* ObjectPoolAlloc.cpp */; };
 		E09AC1211AC1579000B679C0 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E09AC1201AC1579000B679C0 /* main.cpp */; };
 /* End PBXBuildFile section */
 
@@ -31,6 +32,7 @@
 		E043C6381AC2F08600764817 /* Config.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Config.h; sourceTree = "<group>"; };
 		E043C6391AC2F14A00764817 /* Room.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Room.h; sourceTree = "<group>"; };
 		E043C63A1AC2F1BE00764817 /* House.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = House.h; sourceTree = "<group>"; };
+		E054590C1AC9AFE300691B28 /* StaticString.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StaticString.h; sourceTree = "<group>"; };
 		E059D9101AC59881006CCAAE /* UCSolver.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UCSolver.h; sourceTree = "<group>"; };
 		E05A32CE1AC4A0CF0024EE6B /* Robot.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Robot.h; sourceTree = "<group>"; };
 		E06047161AC680D400D9F674 /* Timer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Timer.h; sourceTree = "<group>"; };
@@ -40,6 +42,8 @@
 		E060471B1AC6A41D00D9F674 /* Parser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Parser.h; sourceTree = "<group>"; };
 		E060471C1AC6CD6800D9F674 /* ConfigFile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConfigFile.h; sourceTree = "<group>"; };
 		E060471D1AC6CD9500D9F674 /* ConfigFile.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ConfigFile.cpp; sourceTree = "<group>"; };
+		E0670FE11AC93C17000E95EB /* ObjectPoolAlloc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ObjectPoolAlloc.h; sourceTree = "<group>"; };
+		E0670FE21AC96573000E95EB /* ObjectPoolAlloc.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ObjectPoolAlloc.cpp; sourceTree = "<group>"; };
 		E072513C1AC560E900FB2467 /* Context.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Context.h; sourceTree = "<group>"; };
 		E072513D1AC56D4400FB2467 /* Solver.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Solver.h; sourceTree = "<group>"; };
 		E072513E1AC56E1E00FB2467 /* DFSSolver.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DFSSolver.h; sourceTree = "<group>"; };
@@ -102,6 +106,9 @@
 				E060471B1AC6A41D00D9F674 /* Parser.h */,
 				E060471C1AC6CD6800D9F674 /* ConfigFile.h */,
 				E060471D1AC6CD9500D9F674 /* ConfigFile.cpp */,
+				E0670FE11AC93C17000E95EB /* ObjectPoolAlloc.h */,
+				E0670FE21AC96573000E95EB /* ObjectPoolAlloc.cpp */,
+				E054590C1AC9AFE300691B28 /* StaticString.h */,
 			);
 			path = RobotFattorino;
 			sourceTree = "<group>";
@@ -162,6 +169,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0670FE31AC96573000E95EB /* ObjectPoolAlloc.cpp in Sources */,
 				E06047181AC692A000D9F674 /* Object.cpp in Sources */,
 				E09AC1211AC1579000B679C0 /* main.cpp in Sources */,
 				E060471E1AC6CD9500D9F674 /* ConfigFile.cpp in Sources */,

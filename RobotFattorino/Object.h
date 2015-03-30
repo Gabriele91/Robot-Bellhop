@@ -26,6 +26,7 @@ protected:
     
 public:
     
+    
     typedef std::shared_ptr<Object> ptr;
     typedef std::unique_ptr<Object> uptr;
     typedef std::weak_ptr<Object>   wptr;
@@ -47,6 +48,11 @@ public:
         return (*this) == (&obj);
     }
     
+#ifdef ENABLE_POOL_OBJECT
+    void* operator new     ( std::size_t count );
+    void  operator delete  ( void* ptr         );
+    virtual ~Object(){}
+#endif
 };
 
 //class factory of components
@@ -54,13 +60,15 @@ class ObjectsMap
 {
     //components
     typedef Object::ptr (*CreateObject)(const std::string& value);
-    static std::map< std::string,CreateObject >* cmap;
+    static std::map< std::string,CreateObject >* m_cmap;
+    static size_t m_max_size;
     
 public:
     
+    static void init_pool_alloc(size_t max_size);
+    static size_t get_max_size_of_a_object();
     static Object::ptr create(const std::string& name,const std::string& value);
-    static void append(const std::string& name,CreateObject fun);
-
+    static void append(const std::string& name,CreateObject fun, size_t size);
 };
 
 //class used for static registration of a object class
@@ -73,17 +81,17 @@ class ObjectItem
         return (new T(value))->shader();
     }
     
-    ObjectItem(const std::string& name)
+    ObjectItem(const std::string& name, size_t size)
     {
-        ObjectsMap::append(name, ObjectItem<T>::create);
+        ObjectsMap::append(name, ObjectItem<T>::create, size);
     }
     
 public:
     
     
-    static ObjectItem<T>& Instance(const std::string& name)
+    static ObjectItem<T>& Instance(const std::string& name,size_t size)
     {
-        static ObjectItem<T> objectItem(name);
+        static ObjectItem<T> objectItem(name,size);
         return objectItem;
     }
     
@@ -92,7 +100,7 @@ public:
 #define REGISTERED_OBJECT(classname)\
 namespace\
 {\
-    static const ObjectItem<classname>& _Robot_ ## classname ## _ObjectItem= ObjectItem<classname>::Instance( #classname );\
+    static const ObjectItem<classname>& _Robot_ ## classname ## _ObjectItem= ObjectItem<classname>::Instance( #classname, sizeof(classname) );\
 }
 
 

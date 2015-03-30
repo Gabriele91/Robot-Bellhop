@@ -122,14 +122,14 @@ public:
     bool operator == (const Room& room) const
     {
         if(m_id!=room.m_id) return false;
-        ////////NOT EQUAL NUMBER OF OBJECT?
+        ////////NOT EQUAL NUMBER OF OBJECTS?
         if (m_objects.size() != room.m_objects.size()) 
             return false;
-        ////////ALL MY OBJ IN ROOM?
+        ////////ALL MY OBJS IN ROOM?
         for(Object::ptr this_it  : m_objects)
             if( room.find(this_it) < 0 ) 
                 return false;
-        ////////ALL ROOM OBJ IN ME? (unnecessary)
+        ////////ALL ROOM OBJS IN ME? (unnecessary)
         #if 0
         for(Object::ptr this_it  : room.m_objects)
             if( find(this_it) < 0 ) 
