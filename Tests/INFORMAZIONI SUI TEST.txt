@@ -1,4 +1,4 @@
-
+﻿
 - PRBLEMI BREVI:
 	
 	Cartelle: Test0 e Test1
@@ -9,11 +9,14 @@
 
 - PROBLEMA MEDIO/LUNGO:
 
-	Cartelle: Test3, Test4 e Test5	
+	Cartelle: Test2.5, Test3, Test4 e Test5	
 
 	N.b. Test3 e Test4 sono lo stesso test, ma con pesi cambiati.
-	N.b. Test5 è il più lungo.
-	N.b. Non c'è la dfs perché ho deciso di interrompere il testo, dopo 4 ore di esecuzione.
+
+	N.b. Test5 è il più lungo per quanto riguarda la complessità del problema.
+
+	N.b. In alcuni test non c'è la dfs, 
+	     siccome non hanno dato risultati con più di 4 ore di esecuzione.
 
 - PRBLEMI LUNGHI:
 
