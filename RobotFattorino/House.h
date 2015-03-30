@@ -101,11 +101,12 @@ public:
     virtual bool operator == (const House& house) const
     {
         if(size()!=house.size()) return false;
+        //comparation of doors is fast
         for(size_t i=0; i!=size(); ++i)
-        {
-            if NOT(m_doors[i]==house.m_doors[i]){ return false; }
+            if NOT(m_doors[i] == house.m_doors[i]){ return false; }
+        //comparation of rooms is slow
+        for (size_t i = 0; i != size(); ++i)
             if NOT((*this)[i]==house[i])        { return false; }
-        }
         return true;
     }
     

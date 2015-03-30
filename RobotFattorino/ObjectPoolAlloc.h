@@ -25,12 +25,12 @@ class ObjectPoolAlloc
     size_t m_array_size { 0       };
     char*  m_bytes      { nullptr };
     bool*  m_used       { nullptr };
-    //strac of a allocation
+    //header of a allocation
     struct BlockAlloc
     {
         size_t m_alloc_id;
     };
-    //search a allocation
+    //search a new allocation
     bool search_alloc(size_t from,size_t& out_alloc)
     {
         size_t new_alloc = 0;

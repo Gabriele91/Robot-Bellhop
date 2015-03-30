@@ -289,9 +289,35 @@ public:
     
     bool operator == (const Context& ctx) const
     {
-        if NOT(m_robot.current_room() == ctx.m_robot.current_room()){ return false; }
-        if NOT(m_robot.object() == ctx.m_robot.object())            { return false; }
-        if NOT(m_house == ctx.m_house)                              { return false; }
+        #if 1
+        if NOT(m_robot.current_room() == ctx.m_robot.current_room())
+        {
+            return false;
+        }
+        //This 'if' is valid because the copy constructor do not copy the robot object,
+        //that means the robot move object from context to another context.
+        if NOT(m_robot.object() == ctx.m_robot.object())
+        {
+            return false;
+        }
+        #else
+        if NOT(m_robot.current_room() == ctx.m_robot.current_room())
+        {
+            return false;
+        }
+        if NOT(m_robot.has_an_object() == ctx.m_robot.has_an_object())
+        {
+            return false;
+        }
+        if NOT(m_robot.has_an_object() && ((*m_robot.object()) == *ctx.m_robot.object()))
+        {
+            return false;
+        }
+        #endif
+        if NOT(m_house == ctx.m_house)
+        { 
+            return false;
+        }
         return true;
     }
     
