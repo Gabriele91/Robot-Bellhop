@@ -32,6 +32,7 @@ typedef signed long LONG;
 #define ENABLE_ANALYSIS
 #define ENABLE_POOL_OBJECT
 #define ENABLE_STATIC_STRING_OBJECT
+#define ENABLE_CYCLE_DETECTION
 ////////////////////////////////////////////////////////////////
 //class
 class Object;

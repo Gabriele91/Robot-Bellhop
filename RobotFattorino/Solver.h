@@ -77,6 +77,7 @@ protected:
     
     bool delete_if_olready_exist(Queue& queue)
     {
+#ifdef ENABLE_CYCLE_DETECTION
         ItQueue lastIt          =  last_added(queue);
         const CtxHouse& lastCtx = *lastIt;
         
@@ -92,6 +93,7 @@ protected:
                 return true;
             }
         }
+#endif
         return false;
     }
     

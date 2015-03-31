@@ -9,11 +9,9 @@
 
 - PROBLEMA MEDIO/LUNGO:
 
-	Cartelle: Test 2.4, Test2.5, Test3, Test4 e Test5	
+	Cartelle: Test 2.4, Test2.5, Test3, Test4, Test5 e Test5.5	
 
 	N.b. Test3 e Test4 sono lo stesso test, ma con pesi cambiati.
-
-	N.b. Test5 è il più lungo per quanto riguarda la complessità del problema.
 
 	N.b. In alcuni test non c'è la dfs, 
 	     siccome non hanno dato risultati con più di 4 ore di esecuzione.

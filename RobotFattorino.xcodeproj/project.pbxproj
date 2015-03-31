@@ -263,6 +263,8 @@
 		E09AC1261AC1579000B679C0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				GCC_OPTIMIZATION_LEVEL = fast;
+				OTHER_CFLAGS = "-march=native";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
