@@ -1,0 +1,57 @@
+/*
+	Configuration
+*/
+CONFIG
+{
+	robot 0				/* type uint, default is 0 */
+	doors not equals	/* type equals | not equals, default is not equals */
+	dfs   “test2.4/dfs.txt"		/* type string, if is not specified it isn't execute */
+	bfs   "test2.4/bfs.txt"     /* type string, if is not specified it isn't execute */
+	uc    "test2.4/uc.txt"      /* type string, if is not specified it isn't execute */
+	iddfs "test2.4/iddfs.txt"   /* type string, if is not specified it isn't execute */
+}
+
+/*
+	Setting the weights
+	type int [9] = { 0, 0, 0, 0, 0, 0, 0, 0, 0 }
+	You can set less of 9 element.
+*/
+CONSTS
+{
+    0      //start
+    
+    1      //move prev
+    100    //move next
+    
+    2      //take
+    2      //leaves
+    
+    1      //open prev
+    1      //open next
+    4      //close prev
+    4      //close next
+}
+
+/* 
+	FIRST STATE
+*/
+START
+{
+	/* 0 */  close | Box("Pizza") Box("Cartone")  Key("1")  
+	/* 1 */  close | 
+    /* 2 */  open  | Bread("0.1")
+	/* 3 */  open  | 
+	/* 4 */  open  | Bottle("Bush")
+}
+
+/*
+	TARGET
+*/
+END
+{
+	/* 0 */  close | Key("1")   
+	/* 1 */  close | Bread("0.1")
+	/* 2 */  open  | Box("Pizza") Box("Cartone")
+	/* 3 */  open  | Bottle("Bush")
+	/* 4 */  open  | 
+}

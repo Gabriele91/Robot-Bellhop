@@ -1,4 +1,4 @@
-﻿
+
 - PRBLEMI BREVI:
 	
 	Cartelle: Test0 e Test1
@@ -9,7 +9,7 @@
 
 - PROBLEMA MEDIO/LUNGO:
 
-	Cartelle: Test2.5, Test3, Test4 e Test5	
+	Cartelle: Test 2.4, Test2.5, Test3, Test4 e Test5	
 
 	N.b. Test3 e Test4 sono lo stesso test, ma con pesi cambiati.
 
