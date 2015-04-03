@@ -29,7 +29,7 @@
   <PropertyGroup Label="Globals">
     <ProjectGuid>{6A28A72A-2BD2-4E8D-B930-FB8FE704AD7A}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>RobotFattorino</RootNamespace>
+    <RootNamespace>RobotBellhop</RootNamespace>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -213,32 +213,32 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="RobotFattorino\BFSSolver.h" />
-    <ClInclude Include="RobotFattorino\CollectionObjects.h" />
-    <ClInclude Include="RobotFattorino\Config.h" />
-    <ClInclude Include="RobotFattorino\ConfigFile.h" />
-    <ClInclude Include="RobotFattorino\Context.h" />
-    <ClInclude Include="RobotFattorino\DFSSolver.h" />
-    <ClInclude Include="RobotFattorino\Door.h" />
-    <ClInclude Include="RobotFattorino\House.h" />
-    <ClInclude Include="RobotFattorino\IDDFSSolver.h" />
-    <ClInclude Include="RobotFattorino\Key.h" />
-    <ClInclude Include="RobotFattorino\Object.h" />
-    <ClInclude Include="RobotFattorino\ObjectPoolAlloc.h" />
-    <ClInclude Include="RobotFattorino\Parser.h" />
-    <ClInclude Include="RobotFattorino\Robot.h" />
-    <ClInclude Include="RobotFattorino\Room.h" />
-    <ClInclude Include="RobotFattorino\Solver.h" />
-    <ClInclude Include="RobotFattorino\StaticString.h" />
-    <ClInclude Include="RobotFattorino\Timer.h" />
-    <ClInclude Include="RobotFattorino\UCSolver.h" />
-    <ClInclude Include="RobotFattorino\Visitor.h" />
+    <ClInclude Include="RobotBellhop\BFSSolver.h" />
+    <ClInclude Include="RobotBellhop\CollectionObjects.h" />
+    <ClInclude Include="RobotBellhop\Config.h" />
+    <ClInclude Include="RobotBellhop\ConfigFile.h" />
+    <ClInclude Include="RobotBellhop\Context.h" />
+    <ClInclude Include="RobotBellhop\DFSSolver.h" />
+    <ClInclude Include="RobotBellhop\Door.h" />
+    <ClInclude Include="RobotBellhop\House.h" />
+    <ClInclude Include="RobotBellhop\IDDFSSolver.h" />
+    <ClInclude Include="RobotBellhop\Key.h" />
+    <ClInclude Include="RobotBellhop\Object.h" />
+    <ClInclude Include="RobotBellhop\ObjectPoolAlloc.h" />
+    <ClInclude Include="RobotBellhop\Parser.h" />
+    <ClInclude Include="RobotBellhop\Robot.h" />
+    <ClInclude Include="RobotBellhop\Room.h" />
+    <ClInclude Include="RobotBellhop\Solver.h" />
+    <ClInclude Include="RobotBellhop\StaticString.h" />
+    <ClInclude Include="RobotBellhop\Timer.h" />
+    <ClInclude Include="RobotBellhop\UCSolver.h" />
+    <ClInclude Include="RobotBellhop\Visitor.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="RobotFattorino\ConfigFile.cpp" />
-    <ClCompile Include="RobotFattorino\main.cpp" />
-    <ClCompile Include="RobotFattorino\Object.cpp" />
-    <ClCompile Include="RobotFattorino\ObjectPoolAlloc.cpp" />
+    <ClCompile Include="RobotBellhop\ConfigFile.cpp" />
+    <ClCompile Include="RobotBellhop\main.cpp" />
+    <ClCompile Include="RobotBellhop\Object.cpp" />
+    <ClCompile Include="RobotBellhop\ObjectPoolAlloc.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

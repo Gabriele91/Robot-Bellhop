@@ -15,78 +15,78 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="RobotFattorino\BFSSolver.h">
+    <ClInclude Include="RobotBellhop\BFSSolver.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="RobotFattorino\CollectionObjects.h">
+    <ClInclude Include="RobotBellhop\CollectionObjects.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="RobotFattorino\Config.h">
+    <ClInclude Include="RobotBellhop\Config.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="RobotFattorino\ConfigFile.h">
+    <ClInclude Include="RobotBellhop\ConfigFile.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="RobotFattorino\Context.h">
+    <ClInclude Include="RobotBellhop\Context.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="RobotFattorino\DFSSolver.h">
+    <ClInclude Include="RobotBellhop\DFSSolver.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="RobotFattorino\Door.h">
+    <ClInclude Include="RobotBellhop\Door.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="RobotFattorino\House.h">
+    <ClInclude Include="RobotBellhop\House.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="RobotFattorino\IDDFSSolver.h">
+    <ClInclude Include="RobotBellhop\IDDFSSolver.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="RobotFattorino\Key.h">
+    <ClInclude Include="RobotBellhop\Key.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="RobotFattorino\Object.h">
+    <ClInclude Include="RobotBellhop\Object.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="RobotFattorino\Parser.h">
+    <ClInclude Include="RobotBellhop\Parser.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="RobotFattorino\Robot.h">
+    <ClInclude Include="RobotBellhop\Robot.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="RobotFattorino\Room.h">
+    <ClInclude Include="RobotBellhop\Room.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="RobotFattorino\Solver.h">
+    <ClInclude Include="RobotBellhop\Solver.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="RobotFattorino\Timer.h">
+    <ClInclude Include="RobotBellhop\Timer.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="RobotFattorino\UCSolver.h">
+    <ClInclude Include="RobotBellhop\UCSolver.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="RobotFattorino\Visitor.h">
+    <ClInclude Include="RobotBellhop\Visitor.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="RobotFattorino\ObjectPoolAlloc.h">
+    <ClInclude Include="RobotBellhop\ObjectPoolAlloc.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="RobotFattorino\StaticString.h">
+    <ClInclude Include="RobotBellhop\StaticString.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="RobotFattorino\ConfigFile.cpp">
+    <ClCompile Include="RobotBellhop\ConfigFile.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="RobotFattorino\main.cpp">
+    <ClCompile Include="RobotBellhop\main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="RobotFattorino\Object.cpp">
+    <ClCompile Include="RobotBellhop\Object.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="RobotFattorino\ObjectPoolAlloc.cpp">
+    <ClCompile Include="RobotBellhop\ObjectPoolAlloc.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

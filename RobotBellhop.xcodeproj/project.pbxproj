@@ -49,7 +49,7 @@
 		E072513E1AC56E1E00FB2467 /* DFSSolver.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DFSSolver.h; sourceTree = "<group>"; };
 		E07251401AC5715100FB2467 /* BFSSolver.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BFSSolver.h; sourceTree = "<group>"; };
 		E07EDC761AC5FEF900470452 /* IDDFSSolver.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IDDFSSolver.h; sourceTree = "<group>"; };
-		E09AC11D1AC1579000B679C0 /* RobotFattorino */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = RobotFattorino; sourceTree = BUILT_PRODUCTS_DIR; };
+		E09AC11D1AC1579000B679C0 /* RobotBellhop */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = RobotBellhop; sourceTree = BUILT_PRODUCTS_DIR; };
 		E09AC1201AC1579000B679C0 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		E09AC1271AC158E600B679C0 /* Visitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Visitor.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -69,7 +69,7 @@
 			isa = PBXGroup;
 			children = (
 				E00991861AC87D8F00E83EBE /* config.txt */,
-				E09AC11F1AC1579000B679C0 /* RobotFattorino */,
+				E09AC11F1AC1579000B679C0 /* RobotBellhop */,
 				E09AC11E1AC1579000B679C0 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -77,12 +77,12 @@
 		E09AC11E1AC1579000B679C0 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E09AC11D1AC1579000B679C0 /* RobotFattorino */,
+				E09AC11D1AC1579000B679C0 /* RobotBellhop */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		E09AC11F1AC1579000B679C0 /* RobotFattorino */ = {
+		E09AC11F1AC1579000B679C0 /* RobotBellhop */ = {
 			isa = PBXGroup;
 			children = (
 				E072513E1AC56E1E00FB2467 /* DFSSolver.h */,
@@ -110,15 +110,16 @@
 				E0670FE21AC96573000E95EB /* ObjectPoolAlloc.cpp */,
 				E054590C1AC9AFE300691B28 /* StaticString.h */,
 			);
-			path = RobotFattorino;
+			name = RobotBellhop;
+			path = RobotBellhop;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		E09AC11C1AC1579000B679C0 /* RobotFattorino */ = {
+		E09AC11C1AC1579000B679C0 /* RobotBellhop */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E09AC1241AC1579000B679C0 /* Build configuration list for PBXNativeTarget "RobotFattorino" */;
+			buildConfigurationList = E09AC1241AC1579000B679C0 /* Build configuration list for PBXNativeTarget "RobotBellhop" */;
 			buildPhases = (
 				E09AC1191AC1579000B679C0 /* Sources */,
 				E09AC11A1AC1579000B679C0 /* Frameworks */,
@@ -128,9 +129,9 @@
 			);
 			dependencies = (
 			);
-			name = RobotFattorino;
-			productName = RobotFattorino;
-			productReference = E09AC11D1AC1579000B679C0 /* RobotFattorino */;
+			name = RobotBellhop;
+			productName = RobotBellhop;
+			productReference = E09AC11D1AC1579000B679C0 /* RobotBellhop */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -147,7 +148,7 @@
 					};
 				};
 			};
-			buildConfigurationList = E09AC1181AC1579000B679C0 /* Build configuration list for PBXProject "RobotFattorino" */;
+			buildConfigurationList = E09AC1181AC1579000B679C0 /* Build configuration list for PBXProject "RobotBellhop" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -159,7 +160,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				E09AC11C1AC1579000B679C0 /* RobotFattorino */,
+				E09AC11C1AC1579000B679C0 /* RobotBellhop */,
 			);
 		};
 /* End PBXProject section */
@@ -256,7 +257,7 @@
 		E09AC1251AC1579000B679C0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = RobotBellhop;
 			};
 			name = Debug;
 		};
@@ -265,14 +266,14 @@
 			buildSettings = {
 				GCC_OPTIMIZATION_LEVEL = fast;
 				OTHER_CFLAGS = "-march=native";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = RobotBellhop;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		E09AC1181AC1579000B679C0 /* Build configuration list for PBXProject "RobotFattorino" */ = {
+		E09AC1181AC1579000B679C0 /* Build configuration list for PBXProject "RobotBellhop" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E09AC1221AC1579000B679C0 /* Debug */,
@@ -281,7 +282,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E09AC1241AC1579000B679C0 /* Build configuration list for PBXNativeTarget "RobotFattorino" */ = {
+		E09AC1241AC1579000B679C0 /* Build configuration list for PBXNativeTarget "RobotBellhop" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E09AC1251AC1579000B679C0 /* Debug */,
