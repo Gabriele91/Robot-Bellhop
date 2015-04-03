@@ -1,16 +1,21 @@
 # Robot-Bellhop
-Robot Bellhop a state space search problem, projects created for educational purposes. 
+Robot Bellhop a state space search problem, projects created for educational purposes.
 
 ## Requirements
 
 * Visual Studio 2013 or higher,
 * X-Code 6 or higster.
 
+## Notes
+
+* Look in config.txt if you want try make some test,
+  also look in Tests/test_cpp/main.cpp if you want write some test in C++.
+
 ## License
 
 The MIT License (MIT)
 
-Copyright (c) 2014 Gabriele
+Copyright (c) 2014 Gabriele Di Bari
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
