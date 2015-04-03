@@ -15,6 +15,9 @@
 #include "House.h"
 #include "Context.h"
 
+namespace RobotBellhop
+{
+
 struct ConfigFile
 {
     size_t m_roobot_init { 0     };
@@ -39,6 +42,8 @@ struct ConfigFile
     bool init_from_file(const std::string& path,std::string& errors);
     bool init_from_string(const std::string& string,std::string& errors);
     void execute();
+    
+};
     
 };
 

@@ -12,6 +12,9 @@
 #include "Config.h"
 #include "Object.h"
 
+namespace RobotBellhop
+{
+
 //key
 class Key : public Object
 {
@@ -59,5 +62,7 @@ public:
     }
 };
 REGISTERED_OBJECT(Key);
+
+};
 
 #endif

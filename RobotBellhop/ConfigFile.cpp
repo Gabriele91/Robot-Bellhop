@@ -14,6 +14,8 @@
 #include "IDDFSSolver.h"
 #include <fstream>
 
+namespace RobotBellhop
+{
 
 bool ConfigFile::init_from_file(const std::string& path,std::string& errors)
 {
@@ -90,3 +92,5 @@ void ConfigFile::execute()
 
     
 }
+    
+};

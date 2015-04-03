@@ -18,6 +18,9 @@
 #define CSTRCMP( x, y ) ( std::strncmp( x, y, sizeof(y)-1 ) == 0 )
 #define CSTRCMP_SKIP( x, y ) ( [&x] () -> bool { if ( CSTRCMP(x,y) ) { x += sizeof(y)-1; return true; } return false; } )()
 
+namespace RobotBellhop
+{
+
 class Parser
 {
 protected:
@@ -596,5 +599,6 @@ public:
     
 };
 
+};
 
 #endif

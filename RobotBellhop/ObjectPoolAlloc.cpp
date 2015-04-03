@@ -8,6 +8,9 @@
 
 #include "ObjectPoolAlloc.h"
 
+namespace RobotBellhop
+{
+
 //singleton
 ObjectPoolAlloc* ObjectPoolAlloc::m_global_pool_alloc = nullptr;
 
@@ -26,3 +29,6 @@ void ObjectPoolAlloc::init(size_t block_size,size_t max_size)
         delete m_global_pool_alloc;
     });
 }
+    
+    
+};

@@ -23,10 +23,10 @@ int main(int argc, const char * argv[])
         std::cout << "Failed to set priority time critical ("<< GetLastError()<<")\n";
 #endif
     //init alloc
-    ObjectsMap::init_pool_alloc(megabytes*128);
+    RobotBellhop::ObjectsMap::init_pool_alloc(megabytes*128);
     //parsing
     std::string errors;
-    ConfigFile conf_file;
+    RobotBellhop::ConfigFile conf_file;
     if(!conf_file.init_from_file("config.txt",errors))
     {
         std::cout << errors;

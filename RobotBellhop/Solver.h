@@ -28,6 +28,9 @@
     using ItQueue  = typename Solver< House >::ItQueue ;\
     using CtxHouse = typename Solver< House >::CtxHouse ;
 
+namespace RobotBellhop
+{
+
 template < class House >
 class Solver : public Visitor< Context < House > >
 {
@@ -355,6 +358,8 @@ public:
         
         return sbuffer.str();
     }
+    
+};
     
 };
 

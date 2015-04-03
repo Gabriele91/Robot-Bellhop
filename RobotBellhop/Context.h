@@ -14,6 +14,8 @@
 #include "House.h"
 #include "Robot.h"
 
+namespace RobotBellhop
+{
 
 enum Actions
 {
@@ -326,6 +328,8 @@ public:
         m_action = action;
         if(m_costs) m_cost += m_costs[action];
     }
+    
+};
     
 };
 

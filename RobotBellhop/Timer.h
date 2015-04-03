@@ -16,6 +16,8 @@
 #endif
 
 #include <functional>
+namespace RobotBellhop
+{
 
 namespace Timer
 {
@@ -68,5 +70,7 @@ namespace Timer
         return get_time()-start;
     }
 }
+    
+};
 
 #endif

@@ -13,6 +13,9 @@
 #include "Context.h"
 #include "Solver.h"
 
+namespace RobotBellhop
+{
+
 template < class House >
 class UCSolver : public Solver< House >
 {
@@ -126,6 +129,6 @@ public:
     
 };
 
-
+};
 
 #endif

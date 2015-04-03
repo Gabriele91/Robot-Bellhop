@@ -13,6 +13,9 @@
 #include "Object.h"
 #include "StaticString.h"
 
+namespace RobotBellhop
+{
+
 namespace Default
 {
     #ifdef ENABLE_STATIC_STRING_OBJECT
@@ -140,5 +143,6 @@ public:
 };
 REGISTERED_OBJECT(Bread);
 
+};
 
 #endif

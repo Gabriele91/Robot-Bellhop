@@ -25,6 +25,8 @@
     #include <Windows.h>
 #endif
 ////////////////////////////////////////////////////////////////
+namespace RobotBellhop
+{
 
 #define assert(x)
 #define NOT(x) (!(x))
@@ -33,7 +35,6 @@ typedef signed long LONG;
 #define ENABLE_POOL_OBJECT
 #define ENABLE_STATIC_STRING_OBJECT
 #define ENABLE_CYCLE_DETECTION
-////////////////////////////////////////////////////////////////
 //class
 class Object;
 class Key;
@@ -44,6 +45,8 @@ class House;
 //template class
 template < const size_t size_house = 5 > class StaticHouse;
 class DynamicHouse;
+    
+};
 ////////////////////////////////////////////////////////////////
 
 

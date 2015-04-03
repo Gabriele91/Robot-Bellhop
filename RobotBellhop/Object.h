@@ -9,6 +9,8 @@
 #ifndef RobotFattorino_Object_h
 #define RobotFattorino_Object_h
 
+namespace RobotBellhop
+{
 
 enum TypeObject
 {
@@ -103,7 +105,6 @@ namespace\
     static const ObjectItem<classname>& _Robot_ ## classname ## _ObjectItem= ObjectItem<classname>::Instance( #classname, sizeof(classname) );\
 }
 
-
-
+};
 
 #endif

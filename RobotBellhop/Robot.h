@@ -12,6 +12,9 @@
 #include "Config.h"
 #include "Object.h"
 
+namespace RobotBellhop
+{
+
 class Robot
 {
     //object take
@@ -70,6 +73,7 @@ public:
     }
     
 };
-
+    
+};
 
 #endif

@@ -13,6 +13,9 @@
 #include "Object.h"
 #include "Door.h"
 
+namespace RobotBellhop
+{
+
 enum RoomDoorDir
 {
     PREV = 0,
@@ -151,5 +154,6 @@ public:
     }
 };
 
+};
 
 #endif

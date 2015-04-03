@@ -12,6 +12,9 @@
 #include "Config.h"
 #include <cstring>
 
+namespace RobotBellhop
+{
+
 template< const size_t s_size >
 class StaticString
 {
@@ -113,5 +116,7 @@ inline StaticString<size> operator + (const StaticString<size>& str,const std::s
     StaticString<size> output= str+StaticString<size>(sstr);
     return output;
 }
+    
+};
 
 #endif

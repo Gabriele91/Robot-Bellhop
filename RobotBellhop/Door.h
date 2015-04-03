@@ -13,6 +13,9 @@
 #include "Object.h"
 #include "Key.h"
 
+namespace RobotBellhop
+{
+
 class Door
 {
     //attributes
@@ -90,6 +93,8 @@ public:
     {
         return m_id == door.m_id && m_open==door.m_open;
     }
+};
+    
 };
 
 #endif

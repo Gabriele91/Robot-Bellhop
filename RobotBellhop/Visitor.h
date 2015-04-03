@@ -11,6 +11,9 @@
 #include <queue>
 #include <list>
 
+namespace RobotBellhop
+{
+
 template< typename State,
           typename Queue = std::list< State > >
 class Visitor
@@ -36,4 +39,6 @@ protected:
         return false;
     }
     
+};
+
 };

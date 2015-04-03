@@ -9,6 +9,9 @@
 #include "Object.h"
 #include "ObjectPoolAlloc.h"
 
+namespace RobotBellhop
+{
+
 //object
 #ifdef ENABLE_POOL_OBJECT
 void* Object::operator new     ( std::size_t count )
@@ -64,3 +67,5 @@ Object::ptr ObjectsMap::create(const std::string& name, const std::string& value
     //else null
     return nullptr;
 }
+
+};

@@ -11,6 +11,9 @@
 
 #include "Config.h"
 #include <memory>
+
+namespace RobotBellhop
+{
 //
 class ObjectsMap;
 //
@@ -119,6 +122,8 @@ public:
         m_global_pool_alloc->_dealloc(ptr);
     }
 
+    
+};
     
 };
 

@@ -14,6 +14,9 @@
 #include "Door.h"
 #include "Room.h"
 
+namespace RobotBellhop
+{
+
 //casa
 class House
 {
@@ -259,6 +262,8 @@ public:
     {
         return m_rooms.size();
     }
+    
+};
     
 };
 

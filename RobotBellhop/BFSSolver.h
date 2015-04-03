@@ -12,6 +12,9 @@
 #include "Context.h"
 #include "Solver.h"
 
+namespace RobotBellhop
+{
+
 template < class House >
 class BFSSolver : public Solver< House >
 {
@@ -100,5 +103,6 @@ public:
     
 };
 
+};
 
 #endif
