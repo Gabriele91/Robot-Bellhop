@@ -30,8 +30,18 @@ public:
     
     StaticString(const std::string& string)
     {
-        m_size=std::min(string.size()+1,capacity());
+        m_size=std::min(string.size(),capacity());
         std::strncpy(&m_buffer[0],string.c_str(),m_size);
+        //safe end line
+        m_buffer[m_size]='\0';
+    }
+    
+    StaticString(const char* cstring)
+    {
+        size_t lencstr=std::strlen(cstring);
+        m_size=std::min(lencstr,capacity());
+        std::strncpy(&m_buffer[0],cstring,m_size);
+        //safe end line
         m_buffer[m_size]='\0';
     }
     
@@ -60,6 +70,48 @@ public:
         return m_size==compare.m_size && std::strcmp(&m_buffer[0],&compare.m_buffer[0])==0;
     }
     
+    StaticString<s_size> operator + (const StaticString<s_size>& str)
+    {
+        //copy this
+        StaticString<s_size> output(*this);
+        //new size
+        output.m_size=std::min(size()+str.size(),capacity());
+        //copy next part
+        std::strncpy( &output.m_buffer[size()] , &str.m_buffer[0], output.m_size-size());
+        //safe end line
+        output.m_buffer[output.m_size]='\0';
+        //return
+        return output;
+    }
 };
+
+
+template< const size_t size >
+inline StaticString<size> operator + (const char* cstr,const StaticString<size>& str)
+{
+    StaticString<size> output= StaticString<size>(cstr)+str;
+    return output;
+}
+
+template< const size_t size >
+inline StaticString<size> operator + (const StaticString<size>& str,const char* cstr)
+{
+    StaticString<size> output= str+StaticString<size>(cstr);
+    return output;
+}
+
+template< const size_t size >
+inline StaticString<size> operator + (const std::string& sstr,const StaticString<size>& str)
+{
+    StaticString<size> output= StaticString<size>(sstr)+str;
+    return output;
+}
+
+template< const size_t size >
+inline StaticString<size> operator + (const StaticString<size>& str,const std::string& sstr)
+{
+    StaticString<size> output= str+StaticString<size>(sstr);
+    return output;
+}
 
 #endif

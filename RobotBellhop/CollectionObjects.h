@@ -17,10 +17,8 @@ namespace Default
 {
     #ifdef ENABLE_STATIC_STRING_OBJECT
         typedef StaticString< 50 > string;
-        #define DStringToString(s) std::string((const char*)(s))
     #else
         typedef std::string string;
-        #define DStringToString(s) (s)
     #endif
 }
 enum TypeObjectStandard
@@ -53,7 +51,7 @@ public:
     
     virtual std::string name() const
     {
-        return "Box: "+DStringToString(m_name);
+        return "Box: "+m_name;
     }
     
     virtual bool operator==(const Object* obj) const
@@ -87,7 +85,7 @@ public:
     
     virtual std::string name() const
     {
-        return "Bottle: "+DStringToString(m_name);
+        return "Bottle: "+m_name;
     }
     
     virtual bool operator==(const Object* obj) const
