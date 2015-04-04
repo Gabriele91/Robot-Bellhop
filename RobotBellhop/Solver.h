@@ -328,7 +328,12 @@ public:
         return m_final_res;
     }
     
-    std::string to_string()
+    const VSolution& get_solution() const
+    {
+        return m_solution;
+    }
+    
+    std::string to_string() const
     {
         
         std::stringstream sbuffer;
