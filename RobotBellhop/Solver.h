@@ -84,6 +84,7 @@ protected:
         ItQueue lastIt          =  last_added(queue);
         const CtxHouse& lastCtx = *lastIt;
         
+        #pragma clang loop vectorize(enable)
         for(ItQueue it = queue.begin();
             it!=queue.end();
             ++it)

@@ -9,7 +9,7 @@
 
 - MEDIUM LEVEL PROBLEMS:
 
-	Directories: Test 2.4, Test2.5, Test3, Test4, Test5 and Test5.5.
+	Directories: Test 2.4, Test2.5, Test3, Test3.5, Test4, Test5 and Test5.5.
 
 	N.B. Test3 and Test4 there are  the same test, but the weights are changed.
 
