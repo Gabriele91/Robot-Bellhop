@@ -6,8 +6,8 @@
 //  Copyright (c) 2015 Gabriele Di Bari. All rights reserved.
 //
 
-#ifndef RobotFattorino_Door_h
-#define RobotFattorino_Door_h
+#ifndef RobotBellhop_Door_h
+#define RobotBellhop_Door_h
 
 #include "Config.h"
 #include "Object.h"

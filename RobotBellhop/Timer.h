@@ -6,8 +6,8 @@
 //  Copyright (c) 2015 Gabriele Di Bari. All rights reserved.
 //
 
-#ifndef RobotFattorino_Timer_h
-#define RobotFattorino_Timer_h
+#ifndef RobotBellhop_Timer_h
+#define RobotBellhop_Timer_h
 
 #if defined(_MSC_VER)
     #include <windows.h>

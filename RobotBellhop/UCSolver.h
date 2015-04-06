@@ -6,8 +6,8 @@
 //  Copyright (c) 2015 Gabriele Di Bari. All rights reserved.
 //
 
-#ifndef RobotFattorino_UCSolver_h
-#define RobotFattorino_UCSolver_h
+#ifndef RobotBellhop_UCSolver_h
+#define RobotBellhop_UCSolver_h
 
 
 #include "Context.h"

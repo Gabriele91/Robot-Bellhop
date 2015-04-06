@@ -6,8 +6,8 @@
 //  Copyright (c) 2015 Gabriele Di Bari. All rights reserved.
 //
 
-#ifndef RobotFattorino_Config_h
-#define RobotFattorino_Config_h
+#ifndef RobotBellhop_Config_h
+#define RobotBellhop_Config_h
 
 
 ////////////////////////////////////////////////////////////////

@@ -6,8 +6,8 @@
 //  Copyright (c) 2015 Gabriele Di Bari. All rights reserved.
 //
 
-#ifndef RobotFattorino_DFSSolver_h
-#define RobotFattorino_DFSSolver_h
+#ifndef RobotBellhop_DFSSolver_h
+#define RobotBellhop_DFSSolver_h
 
 #include "Context.h"
 #include "Solver.h"

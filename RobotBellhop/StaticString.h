@@ -6,8 +6,8 @@
 //  Copyright (c) 2015 Gabriele Di Bari. All rights reserved.
 //
 
-#ifndef RobotFattorino_StaticString_h
-#define RobotFattorino_StaticString_h
+#ifndef RobotBellhop_StaticString_h
+#define RobotBellhop_StaticString_h
 
 #include "Config.h"
 #include <cstring>

@@ -6,8 +6,8 @@
 //  Copyright (c) 2015 Gabriele Di Bari. All rights reserved.
 //
 
-#ifndef RobotFattorino_Parser_h
-#define RobotFattorino_Parser_h
+#ifndef RobotBellhop_Parser_h
+#define RobotBellhop_Parser_h
 
 #include "Config.h"
 #include "Object.h"

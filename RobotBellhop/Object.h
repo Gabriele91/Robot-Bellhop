@@ -6,8 +6,8 @@
 //  Copyright (c) 2015 Gabriele Di Bari. All rights reserved.
 //
 
-#ifndef RobotFattorino_Object_h
-#define RobotFattorino_Object_h
+#ifndef RobotBellhop_Object_h
+#define RobotBellhop_Object_h
 
 namespace RobotBellhop
 {

@@ -6,8 +6,8 @@
 //  Copyright (c) 2015 Gabriele Di Bari. All rights reserved.
 //
 
-#ifndef RobotFattorino_ObjectPoolAlloc_h
-#define RobotFattorino_ObjectPoolAlloc_h
+#ifndef RobotBellhop_ObjectPoolAlloc_h
+#define RobotBellhop_ObjectPoolAlloc_h
 
 #include "Config.h"
 #include <memory>
