@@ -56,6 +56,11 @@ public:
         return "Key: "+std::to_string(m_id);
     }
     
+    virtual std::string class_name() const
+    {
+        return "Key";
+    }
+    
     virtual bool operator == (const Object* key) const
     {
         return key->type() == type() && ((Key*)key)->m_id == m_id;

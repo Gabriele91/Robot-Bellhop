@@ -57,6 +57,11 @@ public:
         return "Box: "+m_name;
     }
     
+    virtual std::string class_name() const
+    {
+        return "Box";
+    }
+    
     virtual bool operator==(const Object* obj) const
     {
         return obj->type() == type() && ((Box*)obj)->m_name == m_name;
@@ -89,6 +94,11 @@ public:
     virtual std::string name() const
     {
         return "Bottle: "+m_name;
+    }
+    
+    virtual std::string class_name() const
+    {
+        return "Bottle";
     }
     
     virtual bool operator==(const Object* obj) const
@@ -133,6 +143,11 @@ public:
     virtual std::string name() const
     {
         return "Bread: "+std::to_string(m_kg)+" kg";
+    }
+    
+    virtual std::string class_name() const
+    {
+        return "Bread";
     }
     
     virtual bool operator==(const Object* obj) const

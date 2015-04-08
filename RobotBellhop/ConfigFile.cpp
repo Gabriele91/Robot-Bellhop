@@ -92,5 +92,84 @@ void ConfigFile::execute()
 
     
 }
-    
+//n.b. no stack alloc
+class SepatareExecute : public std::thread
+{
+public:
+    template< class Function >
+    explicit SepatareExecute( Function&& f )
+    :std::thread(
+     [=]()
+     {
+         f();
+         delete this;
+     })
+    {
+        //start
+        detach();
+    };
+
+};
+std::thread* ConfigFile::parallel_execute(TypeOfExecute type,
+                                          std::function< void (Solver*) > callback_end_comp)
+{
+    //thread ptr
+    std::thread* thread=nullptr;
+    //
+    switch (type)
+    {
+        case EX_BFS:
+        thread=new SepatareExecute([=]()
+        {
+            BFSSolver< DynamicHouse > solver(m_roobot_init,m_start,m_end, m_costs, m_doors_equals);
+            solver.solver();
+            //sync call
+            std::mutex mutex; mutex.lock();
+            callback_end_comp(&solver);
+            mutex.unlock();
+        });
+        break;
+        
+        case EX_DFS:
+        thread=new SepatareExecute([=]()
+        {
+            DFSSolver< DynamicHouse > solver(m_roobot_init,m_start,m_end, m_costs, m_doors_equals);
+            solver.solver();
+            //sync call
+            std::mutex mutex; mutex.lock();
+            callback_end_comp(&solver);
+            mutex.unlock();
+        });
+        break;
+        
+        case EX_UC:
+        thread=new SepatareExecute([=]()
+        {
+            UCSolver< DynamicHouse > solver(m_roobot_init,m_start,m_end, m_costs, m_doors_equals);
+            solver.solver();
+            //sync call
+            std::mutex mutex; mutex.lock();
+            callback_end_comp(&solver);
+            mutex.unlock();
+        });
+        break;
+        
+        case EX_IDDFS:
+        thread=new SepatareExecute([=]()
+        {
+            IDDFSSolver< DynamicHouse > solver(m_roobot_init,m_start,m_end, m_costs, m_doors_equals);
+            solver.solver();
+            //sync call
+            std::mutex mutex; mutex.lock();
+            callback_end_comp(&solver);
+            mutex.unlock();
+        });
+        break;
+            
+        default: break;
+    }
+    return thread;
+}
+
+
 };

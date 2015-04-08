@@ -44,6 +44,7 @@ public:
     
     virtual Object::ptr copy() const = 0;
     virtual std::string name() const = 0;
+    virtual std::string class_name() const = 0;
     virtual bool operator==(const Object* obj) const = 0;
     virtual bool operator==(const Object& obj) const
     {

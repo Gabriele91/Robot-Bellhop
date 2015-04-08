@@ -13,13 +13,26 @@
 #include "Object.h"
 #include "Room.h"
 #include "House.h"
+#include "Solver.h"
 #include "Context.h"
+#include <thread>
 
 namespace RobotBellhop
 {
 
+enum TypeOfExecute
+{
+    EX_BFS,
+    EX_DFS,
+    EX_UC,
+    EX_IDDFS
+};
+    
 struct ConfigFile
 {
+    typedef Context< DynamicHouse > Context;
+    typedef RobotBellhop::Solver< DynamicHouse > Solver;
+    
     size_t m_roobot_init { 0     };
     bool   m_doors_equals{ false };
     
@@ -42,6 +55,7 @@ struct ConfigFile
     bool init_from_file(const std::string& path,std::string& errors);
     bool init_from_string(const std::string& string,std::string& errors);
     void execute();
+    std::thread* parallel_execute(TypeOfExecute type, std::function< void (Solver*) > callback_end_comp);
     
 };
     
