@@ -38,7 +38,7 @@ enum Actions
 static const char* ActionsNames[]=
 {
     "START",
-    "MOVE TO THE PREVIUS ROOM",
+    "MOVE TO THE PREVIOUS ROOM",
     "MOVE TO THE NEXT ROOM",
     "TAKE A OBJECT",
     "LEAVES A OBJECT",
