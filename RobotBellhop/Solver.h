@@ -52,12 +52,13 @@ protected:
     std::array< int, A_END > m_costs;
     
 #ifdef ENABLE_ANALYSIS
+    size_t                   m_count_nodes_visited;
     size_t                   m_max_queue_size;
     size_t                   m_count_nodes;
     double                   m_time_to_execute;
 #endif
     
-    virtual ItQueue extract(Queue& queue)=0;;
+    virtual ItQueue extract_node(Queue& queue)=0;
     virtual ItQueue last_added(Queue& queue)=0;;
     virtual void pop(Queue& queue)=0;
     virtual CtxHouse& new_contex(ItQueue it,Queue& queue)=0;
@@ -100,6 +101,15 @@ protected:
 #endif
         return false;
     }
+    
+    virtual ItQueue extract(Queue& queue)
+    {
+        //it's visited:
+#ifdef ENABLE_ANALYSIS
+        ++m_count_nodes_visited;
+#endif
+        return extract_node(queue);
+    };
     
     void succ_aux(ItQueue it, Queue& queue)
     {
@@ -314,6 +324,7 @@ public:
     {
 #ifdef ENABLE_ANALYSIS
         //start
+        m_count_nodes_visited = 0;
         m_count_nodes=1;
         m_max_queue_size=1;
         //count time of execute
@@ -358,6 +369,7 @@ public:
         
 #ifdef ENABLE_ANALYSIS
         sbuffer << "Nodes generated: "  << m_count_nodes <<";\n";
+        sbuffer << "Nodes visited: "  << m_count_nodes_visited <<";\n";
         sbuffer << "Time to execute: " << m_time_to_execute <<" ms;\n";
         sbuffer << "Max queue size: " << m_max_queue_size <<";\n";
 #endif

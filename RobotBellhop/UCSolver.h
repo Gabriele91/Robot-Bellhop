@@ -26,7 +26,7 @@ class UCSolver : public Solver< House >
     
 protected:
     
-    virtual ItQueue extract(Queue& queue)
+    virtual ItQueue extract_node(Queue& queue)
     {
         return m_it;
     }
