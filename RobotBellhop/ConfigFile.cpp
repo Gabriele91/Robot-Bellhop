@@ -13,6 +13,7 @@
 #include "UCSolver.h"
 #include "IDDFSSolver.h"
 #include <fstream>
+#include <mutex>
 
 namespace RobotBellhop
 {

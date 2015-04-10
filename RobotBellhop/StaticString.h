@@ -57,8 +57,13 @@ public:
     {
         return s_size;
     }
-    
+
     operator std::string () const
+    {
+        return std::string(&m_buffer[0]);
+    }
+
+    operator const std::string () const
     {
         return std::string(&m_buffer[0]);
     }

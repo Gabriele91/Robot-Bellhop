@@ -19,7 +19,7 @@ namespace RobotBellhop
 namespace Default
 {
     #ifdef ENABLE_STATIC_STRING_OBJECT
-        typedef StaticString< 50 > string;
+        typedef StaticString< 32 > string;
     #else
         typedef std::string string;
     #endif
@@ -54,7 +54,7 @@ public:
     
     virtual std::string name() const
     {
-        return "Box: "+m_name;
+        return "Box: " + m_name;
     }
     
     virtual std::string class_name() const
