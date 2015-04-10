@@ -15,6 +15,7 @@
 #include <vector>
 #include <array>
 #include <string>
+#include <cstring>
 #include <sstream>
 #include <algorithm>
 #include <map>
@@ -24,6 +25,10 @@
 #ifdef _WIN32
     #include <Windows.h>
 #endif
+// Disable unknown pragma warnings
+#pragma warning ( disable : 4068 )
+// Disable deprecation warnings
+#pragma warning(disable : 4996)
 ////////////////////////////////////////////////////////////////
 namespace RobotBellhop
 {

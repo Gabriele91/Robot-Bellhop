@@ -10,7 +10,6 @@
 #define RobotBellhop_StaticString_h
 
 #include "Config.h"
-#include <cstring>
 
 namespace RobotBellhop
 {
@@ -57,18 +56,13 @@ public:
     {
         return s_size;
     }
-
+    
     operator std::string () const
     {
         return std::string(&m_buffer[0]);
     }
 
-    operator const std::string () const
-    {
-        return std::string(&m_buffer[0]);
-    }
-    
-    operator const char* () const
+    explicit operator const char* () const
     {
         return &m_buffer[0];
     }
